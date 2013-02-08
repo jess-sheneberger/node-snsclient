@@ -1,0 +1,8 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo refreshing node-snsclient/lib in pulse-www/node_modules/pulse-service/node-modules
+
+cd $DIR
+cp -r lib/* ../pulse-www/node_modules/pulse-service/node_modules/aws-snsclient/lib
+
